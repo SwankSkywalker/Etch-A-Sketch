@@ -1,0 +1,13 @@
+
+
+#container {
+    margin-top: 50px;
+    display: inline-grid;
+    grid-gap: 0em;
+    grid-template-rows: repeat(16, 2fr);
+    grid-template-columns: repeat(16, 2fr);
+    border: 5px solid white;
+    border-radius: 5px;
+    height: 500px;
+    width: 500px;
+}
