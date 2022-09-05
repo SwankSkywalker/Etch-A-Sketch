@@ -1,4 +1,10 @@
-
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hotpink;
+}
 
 #container {
     margin-top: 50px;
