@@ -17,6 +17,15 @@ function removeAllChildNodes(parent){
     }
 }
 
+function randoColor(){
+    let letters = '0123456789ABCDEF';
+    let color = '#';
+    for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
 const slider = document.querySelector('#slider');
 const slideVal = document.querySelector('.value');
 slider.addEventListener('input', function(){
@@ -46,8 +55,14 @@ reset.addEventListener('click', function(){
 
 const black = document.querySelector('#black');
 black.addEventListener('click', function(){
-    
-})
+    let val = document.getElementById('slider').value;
+    let cell = grid.children;
+    for (i = 0; i < val*val; i++) {
+        cell[i].addEventListener('mouseover', function(event){
+            event.target.style.backgroundColor = 'black';
+        })
+    }
+});
 const rainbow = document.querySelector('#rainbow');
 
 const chooseColor = document.querySelector('#color');
