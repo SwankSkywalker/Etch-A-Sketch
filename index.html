@@ -16,15 +16,15 @@
         <button id="reset">Reset</button>
         <button id="black">Black</button>
         <button id="rainbow">Rainbow</button>
-        <div id="colorPrompt">
-            <input type="color" id="color"></input>
-            <p>Choose a color</p>
-        </div>
-        <div class="sliderAndValue">
-            <input type="range" min="2" max="100" value="16" id="slider">
-            <p class="value">16</p>
-        </div>
+        <button id="colorPickButton"><Span><input type="color" id="userColor"></input></Span></button>
     </div>
-    <div id="container"></div>
+    <div class="container"></div>
+    <div class="slider">
+        <label for="slider">Select Grid Size:</label>
+        <input type="range" min="2" max="100" value="16" id="slider">
+    </div>
+    <footer class="footer">
+        Made by: <a href="https://github.com/SwankSkywalker" >SwankSkywalker</a>
+    </footer>
 </body>
 </html>
