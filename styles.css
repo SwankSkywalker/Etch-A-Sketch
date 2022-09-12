@@ -1,5 +1,8 @@
+:root {
+    --grid-size: 1;
+}
+
 * {
-    box-sizing: border-box;
     font-family: sans-serif;
 }
 body {
@@ -22,7 +25,6 @@ body {
     width: 100vh;
     height: 50;
     justify-content: space-evenly; 
-    
 }
 
 button {
@@ -40,14 +42,17 @@ button:hover {
     transition: 150ms ease-in;
 }
 
-button:active {
+/* button:active {
 
-}
+}*/
 
-#container {
+.container {
     margin-top: 50px;
     border: 5px solid white;
     background-color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(var(--grid-size), 1fr);
+    grid-template-rows: repeat(var(--grid-size), 1fr);
     border-radius: 5px;
     height: 575px;
     width: 575px;
@@ -61,4 +66,8 @@ button:active {
 
 .footer {
     padding: 25px 0 25px;
+}
+
+.active {
+    background: greenyellow;
 }
