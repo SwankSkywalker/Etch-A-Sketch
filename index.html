@@ -14,14 +14,14 @@
     </header>
     <div class="btns">
         <button id="reset">Reset</button>
-        <button id="black">Black</button>
-        <button id="rainbow">Rainbow</button>
-        <button id="colorPickButton"><Span><input type="color" id="userColor"></input></Span></button>
+        <button class="brush" id="black" data-name="black">Black</button>
+        <button class="brush" id="rainbow" data-name="rainbow" >Rainbow</button>
+        <button id="colorPickButton"><Span><input class="brush" type="color" data-name="colorPick" id="userColor"></input></Span></button>
     </div>
     <div class="container"></div>
     <div class="slider">
-        <label for="slider">Select Grid Size:</label>
-        <input type="range" min="2" max="100" value="16" id="slider">
+        <label for="grid-size">Grid Size: </label>
+        <input type="range" name="grid-size" min="1" max="100" value="16" id="slider">
     </div>
     <footer class="footer">
         Made by: <a href="https://github.com/SwankSkywalker" >SwankSkywalker</a>
