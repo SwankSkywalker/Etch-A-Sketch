@@ -16,10 +16,13 @@
         <button id="reset">Reset</button>
         <button class="brush" id="black" data-name="black">Black</button>
         <button class="brush" id="rainbow" data-name="rainbow" >Rainbow</button>
-        <button id="colorPickButton"><Span><input class="brush" type="color" data-name="colorPick" id="userColor"></input></Span></button>
+        <div class="colorPick">
+            <p>Choose a color</p>
+            <input class="brush" type="color" data-name="colorPick" id="userColor"></input>
+        </div>
     </div>
     <div class="container"></div>
-    <div class="slider">
+    <div class="sliderAndValue">
         <label for="grid-size">Grid Size: </label>
         <input type="range" name="grid-size" min="1" max="100" value="16" id="slider">
     </div>
